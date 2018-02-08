@@ -1,0 +1,28 @@
+
+@import "components/setup";
+@import "components/variable";
+@import "components/mediaquery";
+@import "components/main";
+@import "components/header";
+@import "components/footer";
+@import "components/mixin";
+
+html{
+  font-size: 62.5%;
+}
+
+img{
+  width: 100%;
+}
+
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 90%;
+}
+//  ==== HOW TO MAKE SCSS PARTIAL FILES =======
+// MAKE THE PARTIAL
+// SAVE THE PARTIAL
+// DELETE THE PARTIAL
+// IMPORT THE PARTIAL
+// SAVE style.scss
