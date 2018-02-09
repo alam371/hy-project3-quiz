@@ -145,14 +145,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-.mainContainer {
+section .box {
   width: 450px;
   height: 450px;
   background: sienna;
   margin: 0 auto;
   padding: 0; }
 
-.mainContainer p {
+section .box p {
   font-size: 30px;
   color: #ffffff;
   text-align: center; }
@@ -161,6 +161,19 @@ button {
   font-size: 18px;
   border-radius: 3px;
   padding: 16px 65px; }
+
+section.result {
+  width: 450px;
+  height: 450px;
+  background: sienna;
+  margin: 0 auto;
+  padding: 0; }
+
+.active {
+  display: block; }
+
+section {
+  display: none; }
 
 header {
   width: 100%;

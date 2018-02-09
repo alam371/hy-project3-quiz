@@ -1,131 +1,42 @@
 
 const myApp = {};
 
-    myApp.answers = [
-        {ansOne: 0},
-        {ansTwo: 0},
-        {ansThree: 0},
-        {ansFour: 0},
-    ]
+    // myApp.answer = 0;
 
-    myApp.userSubmitEvents = function(){
-        $('.headerButton').on('click', function(e){
-            e.preventDefault();
-            let fadeOutHomePage = function(){
-                $('.headerButton').fadeOut('.headerText')
-            }
-        })
+    myApp.text = function (tally) {
+        if (tally >= 5 && tally <= 9) return 'cool';
+        if (tally > 9 && tally <= 15) return 'fine';
+        if (tally > 15 && tally <= 20) return 'notfine';
     }
 
-    myApp.userInputEvents = function(){
-        $('form.formOne').on('submit', function(e){
-            e.preventDefault();
-            let collectInput = $('input[name=marmite]:checked').val();
-
-            if (collectInput === 'valOne') {
-                myApp.answers.ansOne = myApp.answers.ansOne + 4;
-            } else if (collectInput === 'valTwo') {
-                myApp.answers.ansTwo = myApp.answers.ansTwo + 3;
-            } else if (collectInput === 'valThree') {
-                myApp.answers.ansThree = myApp.answers.ansThree + 2;
-            } else if (collectInput === 'valFour') {
-                myApp.answers.ansFour = myApp.answers.ansFour + 1;
-            }
-         });
-
-         $('form.formTwo').on('submit', function(e){
-             e.preventDefault();
-             let collectInput = $('input[name=hot]:checked').val();
-
-             if (collectInput === 'valOne') {
-                 myApp.answers.ansOne = myApp.answers.ansOne + 4;
-             } else if (collectInput === 'valTwo') {
-                 myApp.answers.ansTwo = myApp.answers.ansTwo + 3;
-             } else if (collectInput === 'valThree') {
-                 myApp.answers.ansThree = myApp.answers.ansThree + 2;
-             } else if (collectInput === 'valFour') {
-                 myApp.answers.ansFour = myApp.answers.ansFour + 1;
-             }
-    
-         })
-
-         $('form.formThree').on('submit', function(e){ 
-             e.preventDefault();
-             let collectInput = $('input[name=butter]:checked').val();
-             
-             if (collectInput === 'valOne') {
-                 myApp.answers.ansOne = myApp.answers.ansOne + 4;
-             } else if (collectInput === 'valTwo') {
-                 myApp.answers.ansTwo = myApp.answers.ansTwo + 3;
-             } else if (collectInput === 'valThree') {
-                 myApp.answers.ansThree = myApp.answers.ansThree + 2;
-             } else if (collectInput === 'valFour') {
-                 myApp.answers.ansFour = myApp.answers.ansFour + 1;
-             }
-         })
-
-        $('form.formFour').on('submit', function (e) {
-            e.preventDefault();
-            let collectInput = $('input[name=wasabi]:checked').val();
-
-            if (collectInput === 'valOne') {
-                myApp.answers.ansOne = myApp.answers.ansOne + 4;
-            } else if (collectInput === 'valTwo') {
-                myApp.answers.ansTwo = myApp.answers.ansTwo + 3;
-            } else if (collectInput === 'valThree') {
-                myApp.answers.ansThree = myApp.answers.ansThree + 2;
-            } else if (collectInput === 'valFour') {
-                myApp.answers.ansFour = myApp.answers.ansFour + 1;
-            }
-        })
-
-        $('form.formFive').on('submit', function (e) {
-            e.preventDefault();
-            let collectInput = $('input[name=choco]:checked').val();
-
-            if (collectInput === 'valOne') {
-                myApp.answers.ansOne = myApp.answers.ansOne + 4;
-            } else if (collectInput === 'valTwo') {
-                myApp.answers.ansTwo = myApp.answers.ansTwo + 3;
-            } else if (collectInput === 'valThree') {
-                myApp.answers.ansThree = myApp.answers.ansThree + 2;
-            } else if (collectInput === 'valFour') {
-                myApp.answers.ansFour = myApp.answers.ansFour + 1;
-            }
-        })
-
-        // console.log(collectInput);
-        // console.log(myApp.answers);
+    myApp.handleClick = function (e){
+        e.preventDefault();
+        $('.active')
+            .removeClass('active')
+            .next('section')
+            .addClass('active');
     }
 
-    .myApp.eventFadeIn = function(){
-        $('form.formOne').ready(function () {
-            $("button").click(function () {
-                $(".mainContainerOne").fadeIn("slow");
-            });
+    myApp.handleSubmit = function (e) {
+        e.preventDefault();
+        let tally = 0;
+        $('input:checked').each(function() {
+            tally = tally + Number($(this).val());
         });
+        const text = myApp.text(tally);
+        console.log(text);
+        $('.blah').text(text);
     }
 
-    myApp.finalResult = function(){
-        let finalArrayNum = [myApp.answers];
-        for (let i = 0; i < my.App.answers.length; i = i + 1){
-            if (myApp.answers > 5 || myApp.answers <= 9){
-                console.log(${});
-            } else {
-                (myApp.answers > 9 || myApp.answers <= 15){
-                    console.log(${});
-                }
-            } else {
-                (myApp.answers > 15 || myApp.answers <= 20){
-                    console.log(${});
-                }
-            }
-        }
+    myApp.setupEventHandlers = function(){
+        $('.nextButton').click(myApp.handleClick);
+        $('form').on('submit', myApp.handleSubmit);
     }
+
+    
 
     myApp.init = function(){
-        myApp.userSubmitEvents();
-        myApp.userInputEvents();
+        myApp.setupEventHandlers();
     }
 
 // Get the document fired up!
