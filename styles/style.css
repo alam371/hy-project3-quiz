@@ -145,35 +145,119 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-section .box {
-  width: 450px;
-  height: 450px;
-  background: sienna;
-  margin: 0 auto;
-  padding: 0; }
-
-section .box p {
-  font-size: 30px;
-  color: #ffffff;
-  text-align: center; }
-
-button {
-  font-size: 18px;
-  border-radius: 3px;
-  padding: 16px 65px; }
-
-section.result {
-  width: 450px;
-  height: 450px;
-  background: sienna;
-  margin: 0 auto;
-  padding: 0; }
-
 .active {
   display: block; }
 
 section {
   display: none; }
+
+section.startPage {
+  background: #0a0a79;
+  min-height: 100vh; }
+
+.mainContainerNone h1 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 80px;
+  color: #fc770a; }
+
+.mainContainerNone h2 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  color: #d306da; }
+
+button {
+  width: 300px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 3px;
+  padding: 16px 65px;
+  text-decoration: none;
+  border: 1px;
+  background: #00cc00;
+  color: #8b4727; }
+
+.mainBigContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh; }
+
+.mainContainerOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.mainBoxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+form.formOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.foodBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.inputText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.inputText label {
+  font-family: "Raleway", sans-serif;
+  color: #00cc00;
+  font-size: 36px; }
+
+input[type="radio"] {
+  height: 25px;
+  width: 25px; }
+
+.mainContainerOne.rightBox {
+  background: #8b4727;
+  width: 100%; }
+
+.mainContainerOne.rightBox p {
+  color: #00cc00;
+  font-size: 22px; }
+
+.foodBox img {
+  width: 30%; }
+
+.foodBox p {
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  color: #8b4727; }
+
+.foodBox i {
+  font-size: 40px;
+  color: #8b4727; }
 
 header {
   width: 100%;
@@ -197,6 +281,5 @@ img {
   width: 100%; }
 
 .wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  width: 90%; }
+  width: 90%;
+  margin: 0 auto; }

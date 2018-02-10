@@ -4,172 +4,404 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Quiz</title>
+    <title>Hunger Strikes!</title>
 </head>
 <body>
-    <!-- <header class="wrapper">
-        <div class="headerText">
-        <h1>How hungry are you?</h1>
-        <h2>You've been partying with your buds. It's 3am and you're famish. You can't make coherent decisions. Take a quiz and find out what you should eat!</h2>
-        </div>
-        <div>
-            <button class="headerButton">first</button>
-        </div>
-    </header> -->
 <!-- ========= START OF QUIZ SECTION ========= -->
     <main class="wrapper">
+        <section class="active startPage">
+            <div class="mainContainerNone box wrapper">
+                <h1>How hungry are you?</h1>
+                <h2>You've been partying with your buds. It's 3am and you're famish. You can't make coherent decisions. Take a quiz and find out what you should eat!</h2>
+            </div>
 
-        <!-- === QUESTION ONE === -->
-        <section class="questionOne active">
-            <div class="mainContainerOne box">
-                <p>Marmite</p>
-                <p>Avocado</p>
-            </div>
-            <div>
-                <i class="fa fa-plus"></i>
-            </div>
             <form class="formOne">
-                <p>Random fact: On average, 53.5 million pounds of guacamole are eaten every Super Bowl Sunday, enough to cover a football field more than
-                20 feet thick?!</p>
                 <div>
-                    <input type="radio" id="marmiteChoice1" name="marmite" value="1">
-                    <label for="marmiteChoice1">Email</label>
-            
-                    <input type="radio" id="marmiteChoice2" name="marmite" value="2">
-                    <label for="marmiteChoice2">Phone</label>
-            
-                    <input type="radio" id="marmiteChoice3" name="marmite" value="3">
-                    <label for="marmiteChoice3">Mail</label>
-
-                    <input type="radio" id="marmiteChoice4" name="marmite" value="4">
-                    <label for="marmiteChoice4">Mobile</label>
-                </div>
-                <div>
-                    <button class="nextButton">Submit</button>
+                    <button class="nextButton">Hurry Already!</button>
                 </div>
             </form>
+        </section>
+
+        <!-- === QUESTION ONE === -->
+        <section class="questionOne">
+
+            <div class="mainBigContainer">
+                <div class="mainContainerOne leftBox">
+                    <div class="foodBoxContainer">
+            
+                            <div class="foodBox">
+                                <p>Marmite</p>
+                            </div>
+                            <div class="foodBox">
+                                <img src="assets/marmite.jpg" alt="image of a jar of marmite">
+                            </div>
+                            <div class="foodBox">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                            <div class="foodBox">
+                                <p>Avocado</p>
+                            </div>
+                            <div class="foodBox">
+                                <img src="assets/plain-avocado-toast.jpg" alt="image of avocado on toast">
+                            </div>
+        
+                    </div>
+                    
+                </div>
+                
+                <div class="mainContainerOne rightBox">
+                    <form class="formOne facts">
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <input type="radio" id="marmiteChoice1" name="marmite" value="1" checked="checked">
+                                <label for="marmiteChoice1">That sounds gross!
+                                </label>
+                            </div>
+                            
+                            <div class="inputText">
+                                <input type="radio" id="marmiteChoice2" name="marmite" value="2">
+                                <label for="marmiteChoice2">I'll have a bite?
+                                </label>
+                            </div>
+                            
+                            <div class="inputText">
+                                <input type="radio" id="marmiteChoice3" name="marmite" value="3">
+                                <label for="marmiteChoice3">Sure thing!
+                                </label>
+                            </div>
+                            
+                            <div class="inputText">
+                                <input type="radio" id="marmiteChoice4" name="marmite" value="4">
+                                <label for="marmiteChoice4">Gimme gimme!
+                                </label>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <button class="nextButton">Next!</button>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="inputText">
+                            <p>Did you know?!</p>
+                            <p>On average, 53.5 million pounds of guacamole are eaten every Super Bowl Sunday, enough to cover a football field more than 20 feet thick?!</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
         </section>
 
         <!-- === QUESTION TWO === -->
         <section class="questionTwo">
-            <div class="mainContainerTwo box">
-                <p>Hot Cheetos</p>
-                <p>Cream Cheese</p>
-            </div>
-        
-            <form class="formTwo">
-                <p>Random fact - Flamin' Hot Cheetos were invented by a Frito-Lay janitor, Richard Montañez who talked his way into a meeting with the company's CEO.He was armed with just a sample bag.
-                Flamin' Hot Cheetos has now become one of Frito-Lay's best-selling product and vaulted Montañez up the corporate ladder into an executive vice president
-                position.</p>
-                <div>
-                    <input type="radio" id="hotChoice1" name="hot" value="1">
-                    <label for="hotChoice1">Email</label>
-        
-                    <input type="radio" id="hotChoice2" name="hot" value="2">
-                    <label for="hotChoice2">Phone</label>
-        
-                    <input type="radio" id="hotChoice3" name="hot" value="3">
-                    <label for="hotChoice3">Mail</label>
-        
-                    <input type="radio" id="hotChoice3" name="hot" value="4">
-                    <label for="hotChoice3">Mobile</label>
-                </div>
-                <div>
-                    <button class="nextButton">Submit</button>
-                </div>
-            </form>
-        </section>
 
+            <div class="mainBigContainer">
+                <div class="mainContainerOne leftBox">
+                    <div class="foodBoxContainer">
+            
+                        <div class="foodBox">
+                            <p>Hot Cheetos</p>
+                        </div>
+                        <div class="foodBox">
+                            <img src="assets/marmite.jpg" alt="image of a jar of marmite">
+                        </div>
+                        <div class="foodBox">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="foodBox">
+                            <p>Cream Cheese</p>
+                        </div>
+                        <div class="foodBox">
+                            <img src="assets/plain-avocado-toast.jpg" alt="image of avocado on toast">
+                        </div>
+            
+                    </div>
+            
+                </div>
+            
+                <div class="mainContainerOne rightBox">
+                    <form class="formTwo facts">
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <input type="radio" id="hotChoice1" name="hot" value="1" checked="checked">
+                                <label for="hotChoice1">Email</label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="hotChoice2" name="hot" value="2">
+                                <label for="hotChoice2">Phone</label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="hotChoice3" name="hot" value="3">
+                                <label for="hotChoice3">Mail</label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="hotChoice4" name="hot" value="4">
+                                <label for="hotChoice3">Mobile</label>
+
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <button class="nextButton">Next!</button>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <p>Did you know?!</p>
+                                <p>Random fact - Flamin' Hot Cheetos were invented by a Frito-Lay janitor, Richard Montañez who talked his way into a meeting
+                                with the company's CEO.He was armed with just a sample bag. Flamin' Hot Cheetos has now become one of Frito-Lay's best-selling
+                                product and vaulted Montañez up the corporate ladder into an executive vice president position.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </section>
         <!-- QUESTION THREE -->
         <section class="questionThree">
-            <div class="mainContainerThree box">
-                <p>White Bread</p>
-                <p>Butter + Sprinkles</p>
+            <div class="mainBigContainer">
+                <div class="mainContainerOne leftBox">
+                    <div class="foodBoxContainer">
+            
+                        <div class="foodBox">
+                            <p>White Bread</p>
+                        </div>
+                        <div class="foodBox">
+                            <img src="assets/marmite.jpg" alt="image of a jar of marmite">
+                        </div>
+                        <div class="foodBox">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="foodBox">
+                        <p>Butter + Sprinkles</p>
+                        </div>
+                        <div class="foodBox">
+                            <img src="assets/plain-avocado-toast.jpg" alt="image of avocado on toast">
+                        </div>
+            
+                    </div>
+            
+                </div>
+            
+                <div class="mainContainerOne rightBox">
+                    <form class="formThree facts">
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <input type="radio" id="butterChoice1" name="butter" value="1" checked="checked">
+                                <label for="butterChoice1">Email</label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="butterChoice2" name="butter" value="2">
+                                <label for="butterChoice2">Phone</label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="butterChoice3" name="butter" value="3">
+                                <label for="butterChoice3">Mail</label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="butterChoice3" name="butter" value="4">
+                                <label for="butterChoice4">Mobile</label>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <button class="nextButton">Next!</button>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <p>Did you know?!</p>
+                                <p>Random fact: When first sold, sliced bread was advertised as “the greatest forward step in the baking industry since bread
+                                was wrapped”. This led to the popular phrase “the best thing since sliced bread".</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-        
-            <form class="formThree">
-                <p>Random fact: When first sold, sliced bread was advertised as “the greatest forward step in the baking industry since bread was wrapped”.
-                This led to the popular phrase “the best thing since sliced bread".</p>
-                <div>
-                    <input type="radio" id="butterChoice1" name="butter" value="1">
-                    <label for="butterChoice1">Email</label>
-        
-                    <input type="radio" id="butterChoice2" name="butter" value="2">
-                    <label for="butterChoice2">Phone</label>
-        
-                    <input type="radio" id="butterChoice3" name="butter" value="3">
-                    <label for="butterChoice3">Mail</label>
-        
-                    <input type="radio" id="butterChoice3" name="butter" value="4">
-                    <label for="butterChoice3">Mobile</label>
-                </div>
-                <div>
-                    <button class="nextButton">Submit</button>
-                </div>
-            </form>
-        </section>
+            
+            </section>
 
         <!-- === QUESTION FOUR === -->
         <section class="questionFour">
-            <div class="mainContainerFour box">
-                <p>Wasabi Peas</p>
-                <p>Grapefruit Juice</p>
+            <div class="mainBigContainer">
+                <div class="mainContainerOne leftBox">
+                    <div class="foodBoxContainer">
+            
+                        <div class="foodBox">
+                            <p>Wasabi Peas</p>
+                        </div>
+                        <div class="foodBox">
+                            <img src="assets/marmite.jpg" alt="image of a jar of marmite">
+                        </div>
+                        <div class="foodBox">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="foodBox">
+                            <p>Grapefruit Juice</p>
+                        </div>
+                        <div class="foodBox">
+                            <img src="assets/plain-avocado-toast.jpg" alt="image of avocado on toast">
+                        </div>
+            
+                    </div>
+            
+                </div>
+            
+                <div class="mainContainerOne rightBox">
+                    <form class="formFour facts">
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <input type="radio" id="wasabiChoice1" name="wasabi" value="1" checked="checked">
+                                <label for="wasabiChoice1">Email</label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="wasabiChoice2" name="wasabi" value="2">
+                                <label for="wasabiChoice2">Phone</label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="wasabiChoice3" name="wasabi" value="3">
+                                <label for="wasabiChoice3">Mail</label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="wasabiChoice3" name="wasabi" value="4">
+                                <label for="wasabiChoice4">Mobile</label>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <button class="nextButton">Next!</button>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <p>Did you know?!</p>
+                                <p>Grapefruit juice can have a major effect on the potency of various medications, and can even cause an overdose
+                                when taking prescribed doses.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-        
-            <form class="formFour">
-                <p>Random fact: Grapefruit juice can have a major effect on the potency of various medications, and can even cause an overdose when taking
-                prescribed doses.</p>
-                <div>
-                    <input type="radio" id="wasabiChoice1" name="wasabi" value="1">
-                    <label for="wasabiChoice1">Email</label>
-        
-                    <input type="radio" id="wasabiChoice2" name="wasabi" value="2">
-                    <label for="wasabiChoice2">Phone</label>
-        
-                    <input type="radio" id="wasabiChoice3" name="wasabi" value="3">
-                    <label for="wasabiChoice3">Mail</label>
-        
-                    <input type="radio" id="wasabiChoice3" name="wasabi" value="4">
-                    <label for="wasabiChoice4">Mobile</label>
-                </div>
-                <div>
-                    <button class="nextButton">Submit</button>
-                </div>
-            </form>
-        </section>
+            
+            </section>
 
         <!-- === QUESTION FIVE === -->
-        <section class="questionFive">
-            <div class="mainContainerFive box">
-                <p>Hot Chocolate</p>
-                <p>Cheese</p>
+        <!-- <section class="questionFive">
+            <div class="mainBigContainer">
+                <div class="mainContainerOne leftBox">
+                    <div class="foodBoxContainer">
+            
+                        <div class="foodBox">
+                            <p>Hot Chocolate</p>
+                        </div>
+                        <div class="foodBox">
+                            <img src="assets/marmite.jpg" alt="image of a jar of marmite">
+                        </div>
+                        <div class="foodBox">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="foodBox">
+                            <p>Cheese</p>
+                        </div>
+                        <div class="foodBox">
+                            <img src="assets/plain-avocado-toast.jpg" alt="image of avocado on toast">
+                        </div>
+            
+                    </div>
+            
+                </div>
+            
+                <div class="mainContainerOne rightBox">
+                    <form class="formFive fact" id="finalResult">
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <input type="radio" id="chocoChoice1" name="choco" value="1" checked="checked">
+                                <label for="chocoChoice1">Email</label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="chocoChoice2" name="choco" value="2">
+                                <label for="chocoChoice2">Phone</label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="marmiteChoice3" name="marmite" value="3">
+                                <label for="marmiteChoice3">Sure thing!
+                                </label>
+                            </div>
+            
+                            <div class="inputText">
+                                <input type="radio" id="chocoChoice4" name="choco" value="4">
+                                <label for="chocoChoice4">Mobile</label>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <button class="nextButton">Next!</button>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <p>Did you know?!</p>
+                                <p>Percy Spence, a scientist working on WWII radar and weapons projects, happened to be a big fan of chocolate. After spending
+                                some time near a formidable device called a magnetron, he noticed the chocolate bar he’d been keeping in his pocket had turned
+                                to mush. He quickly put two and two together and realized magnetrons might be able to heat up food at incredibly fast rates, and voilà, the microwave oven was born.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
+            
+            </section> -->
+
+
+        <section>
+        <div class="mainContainerFive box">
+            <p>Hot Chocolate</p>
+            <p>Cheese</p>
+        </div>
         
-            <form class="formFive">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, harum soluta omnis modi pariatur debitis labore
-                    consectetur at asperiores ducimus sit aspernatur excepturi ad nisi sequi quaerat quas sint ut.</p>
-                <div>
-                    <input type="radio" id="chocoChoice1" name="choco" value="1">
-                    <label for="chocoChoice1">Email</label>
+        <form class="formFive facts" id="finalResult">
+            <p>Did you know?</p>
+            <p>Percy Spence, a scientist working on WWII radar and weapons projects, happened to be a big fan of chocolate. After spending
+                some time near a formidable device called a magnetron, he noticed the chocolate bar he’d been keeping in his pocket
+                had turned to mush. He quickly put two and two together and realized magnetrons might be able to heat up food at
+                incredibly fast rates, and voilà, the microwave oven was born.</p>
+            <div>
+                <input type="radio" id="chocoChoice1" name="choco" value="1" checked="checked">
+                <label for="chocoChoice1">Email</label>
         
-                    <input type="radio" id="chocoChoice2" name="choco" value="2">
-                    <label for="chocoChoice2">Phone</label>
+                <input type="radio" id="chocoChoice2" name="choco" value="2">
+                <label for="chocoChoice2">Phone</label>
         
-                    <input type="radio" id="chocoChoice3" name="choco" value="3">
-                    <label for="chocoChoice3">Mail</label>
+                <input type="radio" id="chocoChoice3" name="choco" value="3">
+                <label for="chocoChoice3">Mail</label>
         
-                    <input type="radio" id="chocoChoice3" name="choco" value="4">
-                    <label for="chocoChoice4">Mobile</label>
-                </div>
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
+                <input type="radio" id="chocoChoice3" name="choco" value="4">
+                <label for="chocoChoice4">Mobile</label>
+            </div>
+            <div>
+                <button type="submit">Show Me!</button>
+            </div>
+        </form>
         </section>
-        <!-- === RESULT TEXT === -->
-        <section class="result wrapper">
-            <div>BOX</div>
+        <!-- RESULT PAGE -->
+        <section class="finalResult">
+            <div class="word"></div>
+            <div class="">
+                <button class="playAgain">Again!</button>
+            </div>
         </section>
     </main>
     <footer>
