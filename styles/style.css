@@ -145,6 +145,21 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+@media (max-width: 940px) {
+  .mainBigContainer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
+@media (max-width: 768px) {
+  .mainBigContainer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
+@media (max-width: 480px) {
+  .mainBigContainer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
 .active {
   display: block; }
 
@@ -153,19 +168,27 @@ section {
 
 section.startPage {
   background: #0a0a79;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding: 50px 100px; }
 
 .mainContainerNone h1 {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 80px;
-  color: #fc770a; }
+  color: #fc770a;
+  margin: 0; }
 
 .mainContainerNone h2 {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 40px;
-  color: #d306da; }
+  color: #fc770a; }
+
+h1 span {
+  color: #23c902; }
+
+h2 span {
+  color: #23c902; }
 
 button {
   width: 300px;
@@ -175,21 +198,23 @@ button {
   padding: 16px 65px;
   text-decoration: none;
   border: 1px;
-  background: #00cc00;
+  background: #23c902;
   color: #8b4727; }
 
 .mainBigContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh; }
+  height: 100vh; }
 
 .mainContainerOne {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .mainBoxContainer {
   display: -webkit-box;
@@ -200,18 +225,30 @@ form.formOne {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.foodBoxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .foodBox {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  display: flex; }
 
 .inputBox {
   display: -webkit-box;
@@ -220,7 +257,10 @@ form.formOne {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left; }
 
 .inputText {
   display: -webkit-box;
@@ -228,7 +268,10 @@ form.formOne {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 25px; }
 
 .inputText label {
   font-family: "Raleway", sans-serif;
@@ -236,7 +279,7 @@ form.formOne {
   font-size: 36px; }
 
 input[type="radio"] {
-  height: 25px;
+  height: 40px;
   width: 25px; }
 
 .mainContainerOne.rightBox {
@@ -245,19 +288,25 @@ input[type="radio"] {
 
 .mainContainerOne.rightBox p {
   color: #00cc00;
-  font-size: 22px; }
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 30px; }
 
-.foodBox img {
-  width: 30%; }
+.junkBox {
+  width: 150px;
+  height: 150px;
+  margin: 35px 0px; }
 
 .foodBox p {
   font-family: "Raleway", sans-serif;
   font-size: 60px;
-  color: #8b4727; }
+  color: #8b4727;
+  margin: 0; }
 
 .foodBox i {
   font-size: 40px;
-  color: #8b4727; }
+  color: #8b4727;
+  margin: 35px 0px; }
 
 header {
   width: 100%;

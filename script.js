@@ -4,11 +4,11 @@ const myApp = {};
     myApp.text = function (tally) {
         // This function is evaluating what response to give the user.
         if (tally >= 5 && tally <= 9) {
-            $('.word').text(`You're not that hungry. Have lots of water and go to bed, already!`);
+            $('.word').text(`Go to bed! Don't even think about eating!`);
         } else if (tally > 9 && tally <= 15) {
-            $('.word').text(`You should eat only a bit and go to bed! `);
+            $('.word').text(`You can eat half of everything in this quiz! `);
         } else if (tally > 15 && tally <= 20) {
-            $('.word').text(`You must of had a wild night! You are going to eat whatever is lying around! Do you have a new tatto to match your hunger??`);
+            $('.word').text(`You're super hangry. You must of had a wild night! Eat everything in sight! Also, check if you just got a tattoo!!`);
         }
         $('.finalResult').show();
     }
@@ -60,7 +60,6 @@ const myApp = {};
         // when .playAgain is clicked, it passes myApp.restartSubmit.
         $('.playAgain').on('click', myApp.restartSubmit);
     }
-
     
 
     myApp.init = function(){

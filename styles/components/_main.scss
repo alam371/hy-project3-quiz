@@ -9,19 +9,29 @@ section{
 section.startPage{
     background: rgb(10, 10, 121);
     min-height: 100vh;
+    padding: 50px 100px;
 }
 .mainContainerNone h1{
     text-align: center;
     font-family: $baseFont;
     font-size: 80px;
     color: #fc770a;
+    margin: 0;
 }
 .mainContainerNone h2{
     text-align: center;
     font-family: $baseFont;
     font-size: 40px;
-    color:#d306da;
+    color:#fc770a;
 }
+
+h1 span{
+    color: rgb(35, 201, 2);
+}
+h2 span{
+    color: rgb(35, 201, 2);
+}
+
 button{
     width: 300px;
     height: 60px;
@@ -30,39 +40,54 @@ button{
     padding: 16px 65px;
     text-decoration: none;
     border: 1px;
-    background: #00cc00;
+    background:rgb(35, 201, 2);
     color: #8b4727;
 }
 
 // QUESTION ONE STYLING
 .mainBigContainer{
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
 }
+
 .mainContainerOne{
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
 }
+
 .mainBoxContainer{
     display: flex;
 }
+
 form.formOne{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
+
+.foodBoxContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .foodBox{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
+
 .inputBox{
     display: flex;
     flex-direction: column;
+    align-items: left;
 }
 
 .inputText{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
 }
 
 .inputText label{
@@ -71,9 +96,8 @@ form.formOne{
     font-size: 36px;
 }
 
-
 input[type="radio"]{
-    height: 25px;
+    height: 40px;
     width: 25px; 
 }
 
@@ -84,17 +108,23 @@ input[type="radio"]{
 .mainContainerOne.rightBox p{
     color: #00cc00;
     font-size: 22px;
+    text-align: center;
+    margin: 20px 30px;
 }
 
-.foodBox img{
-    width: 30%;
+.junkBox{
+    width: 150px;
+    height: 150px;
+    margin: 35px 0px;
 }
 .foodBox p{
     font-family: $baseFont;
     font-size: 60px;
     color:  #8b4727;
+    margin: 0;
 }
 .foodBox i{
     font-size: 40px;
     color: #8b4727;
+    margin: 35px 0px;
 }
