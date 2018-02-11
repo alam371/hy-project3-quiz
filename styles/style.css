@@ -145,10 +145,53 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+@media (max-width: 1250px) {
+  .mainBigContainer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  form.formOne {
+    padding: 0px 200px; }
+  form.formTwo {
+    padding: 0px 200px; }
+  form.formThree {
+    padding: 0px 200px; }
+  form.formFour {
+    padding: 0px 200px; }
+  form.formFive {
+    padding: 0px 200px; } }
+
+@media (max-width: 1100px) {
+  form.formOne {
+    padding: 0px 140px; }
+  form.formTwo {
+    padding: 0px 140px; }
+  form.formThree {
+    padding: 0px 140px; }
+  form.formFour {
+    padding: 0px 140px; }
+  form.formFive {
+    padding: 0px 140px; } }
+
+@media (max-width: 978px) {
+  form.formOne {
+    padding: 0px 120px; }
+  form.formTwo {
+    padding: 0px 120px; }
+  form.formThree {
+    padding: 0px 120px; }
+  form.formFour {
+    padding: 0px 120px; }
+  form.formFive {
+    padding: 0px 120px; } }
+
 @media (max-width: 940px) {
   .mainBigContainer {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .foodBoxContainer .junkBox {
+    width: 0px;
+    height: 0px;
+    margin: 35px 0px; } }
 
 @media (max-width: 768px) {
   .mainBigContainer {
@@ -305,7 +348,7 @@ section.questionOne .mainContainerOne.leftBox {
     color: #8b4727; }
 
 section.questionTwo .mainContainerOne.rightBox {
-  color: #ffe5cc;
+  color: #fce3cc;
   background: #fc770a;
   font-size: 22px;
   text-align: center;
@@ -319,7 +362,7 @@ section.questionTwo .mainContainerOne.rightBox {
     padding: 16px 65px;
     text-decoration: none;
     border: 1px;
-    background: #ffe5cc;
+    background: #fce3cc;
     color: #fc770a; }
 
 section.questionTwo .mainContainerOne.leftBox {
@@ -331,8 +374,8 @@ section.questionTwo .mainContainerOne.leftBox {
     color: #fc770a; }
 
 section.questionThree .mainContainerOne.rightBox {
-  color: #fda2b1;
-  background: #ffe5cc;
+  color: #fc869a;
+  background: #fce3cc;
   font-size: 22px;
   text-align: center;
   margin: 20px 30px;
@@ -345,16 +388,16 @@ section.questionThree .mainContainerOne.rightBox {
     padding: 16px 65px;
     text-decoration: none;
     border: 1px;
-    background: #fda2b1;
-    color: #ffe5cc; }
+    background: #fc869a;
+    color: #fce3cc; }
 
 section.questionThree .mainContainerOne.leftBox {
   font-size: 50px;
   font-family: "Raleway", sans-serif;
-  color: #fda2b1; }
+  color: #fc869a; }
   section.questionThree .mainContainerOne.leftBox .foodBox i {
     font-size: 40px;
-    color: #fda2b1; }
+    color: #fc869a; }
 
 section.questionFour .mainContainerOne.rightBox {
   color: #23c902;
@@ -432,9 +475,8 @@ section.finalResult {
 
 .word {
   font-family: "Raleway", sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   color: #23c902;
-  margin: 0;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;

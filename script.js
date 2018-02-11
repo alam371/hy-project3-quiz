@@ -60,7 +60,6 @@ const myApp = {};
         // when .playAgain is clicked, it passes myApp.restartSubmit.
         $('.playAgain').on('click', myApp.restartSubmit);
     }
-    
 
     myApp.init = function(){
         // This function initiate all the functions.
