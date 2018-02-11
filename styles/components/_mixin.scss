@@ -1,0 +1,30 @@
+@mixin rightBox ($color, $backgroundColor) {
+    color: $color;
+    background: $backgroundColor;
+    font-size: 22px;
+    text-align: center;
+    margin: 20px 30px;
+    width: 100%; 
+}
+
+@mixin leftBox ($color) {
+    font-size: 50px;
+    font-family: $baseFont;
+    color: $color;
+    .foodBox i {
+        font-size: 40px;
+        color: $color;
+    }
+}
+
+@mixin questionButton ($color, $backgroundColor){
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 16px 65px;
+    text-decoration: none;
+    border: 1px;
+    background:$backgroundColor;
+    color: $color;
+}

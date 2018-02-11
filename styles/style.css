@@ -204,8 +204,7 @@ button {
 .mainBigContainer {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  height: 100vh; }
+  display: flex; }
 
 .mainContainerOne {
   display: -webkit-box;
@@ -271,42 +270,175 @@ form.formOne {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 25px; }
-
-.inputText label {
-  font-family: "Raleway", sans-serif;
-  color: #00cc00;
-  font-size: 36px; }
+  margin: 20px 170px; }
 
 input[type="radio"] {
-  height: 40px;
+  height: 20px;
   width: 25px; }
 
-.mainContainerOne.rightBox {
+section.questionOne .mainContainerOne.rightBox {
+  color: #23c902;
   background: #8b4727;
-  width: 100%; }
-
-.mainContainerOne.rightBox p {
-  color: #00cc00;
   font-size: 22px;
   text-align: center;
-  margin: 20px 30px; }
+  margin: 20px 30px;
+  width: 100%; }
+  section.questionOne .mainContainerOne.rightBox .inputBox {
+    width: 100%; }
+  section.questionOne .mainContainerOne.rightBox .inputBox button {
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 16px 65px;
+    text-decoration: none;
+    border: 1px;
+    background: #23c902;
+    color: #8b4727; }
+
+section.questionOne .mainContainerOne.leftBox {
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  color: #8b4727; }
+  section.questionOne .mainContainerOne.leftBox .foodBox i {
+    font-size: 40px;
+    color: #8b4727; }
+
+section.questionTwo .mainContainerOne.rightBox {
+  color: #ffe5cc;
+  background: #fc770a;
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 30px;
+  width: 100%; }
+  section.questionTwo .mainContainerOne.rightBox .inputBox button {
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 16px 65px;
+    text-decoration: none;
+    border: 1px;
+    background: #ffe5cc;
+    color: #fc770a; }
+
+section.questionTwo .mainContainerOne.leftBox {
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  color: #fc770a; }
+  section.questionTwo .mainContainerOne.leftBox .foodBox i {
+    font-size: 40px;
+    color: #fc770a; }
+
+section.questionThree .mainContainerOne.rightBox {
+  color: #fda2b1;
+  background: #ffe5cc;
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 30px;
+  width: 100%; }
+  section.questionThree .mainContainerOne.rightBox .inputBox button {
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 16px 65px;
+    text-decoration: none;
+    border: 1px;
+    background: #fda2b1;
+    color: #ffe5cc; }
+
+section.questionThree .mainContainerOne.leftBox {
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  color: #fda2b1; }
+  section.questionThree .mainContainerOne.leftBox .foodBox i {
+    font-size: 40px;
+    color: #fda2b1; }
+
+section.questionFour .mainContainerOne.rightBox {
+  color: #23c902;
+  background: #e41382;
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 30px;
+  width: 100%; }
+  section.questionFour .mainContainerOne.rightBox .inputBox button {
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 16px 65px;
+    text-decoration: none;
+    border: 1px;
+    background: #23c902;
+    color: #e41382; }
+
+section.questionFour .mainContainerOne.leftBox {
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  color: #e41382; }
+  section.questionFour .mainContainerOne.leftBox .foodBox i {
+    font-size: 40px;
+    color: #e41382; }
+
+section.questionFive .mainContainerOne.rightBox {
+  color: #fc770a;
+  background: #8b4727;
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 30px;
+  width: 100%; }
+  section.questionFive .mainContainerOne.rightBox .inputBox button {
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 16px 65px;
+    text-decoration: none;
+    border: 1px;
+    background: #fc770a;
+    color: #8b4727; }
+
+section.questionFive .mainContainerOne.leftBox {
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  color: #8b4727; }
+  section.questionFive .mainContainerOne.leftBox .foodBox i {
+    font-size: 40px;
+    color: #8b4727; }
 
 .junkBox {
   width: 150px;
   height: 150px;
   margin: 35px 0px; }
 
-.foodBox p {
+section.finalResult {
+  width: 100%;
+  height: 100vh;
+  background: blue; }
+
+.finalResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center; }
+
+.word {
   font-family: "Raleway", sans-serif;
   font-size: 60px;
-  color: #8b4727;
-  margin: 0; }
-
-.foodBox i {
-  font-size: 40px;
-  color: #8b4727;
-  margin: 35px 0px; }
+  color: #23c902;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 header {
   width: 100%;
