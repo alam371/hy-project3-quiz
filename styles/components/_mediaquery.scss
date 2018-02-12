@@ -2,6 +2,7 @@
     .mainBigContainer{
         flex-wrap: wrap;
     }
+
     form.formOne{
         padding: 0px 200px;
     }
@@ -21,50 +22,36 @@
 }
 
 @media (max-width: 1100px){
-    form.formOne{
-        padding: 0px 140px;
-    }
-    form.formTwo{
-        padding: 0px 140px;
-    }
-    form.formThree{
-        padding: 0px 140px;
-    }
-    form.formFour{
-        padding: 0px 140px;
-    }
-    form.formFive{
-        padding: 0px 140px;
-    }
+    // form.formOne{
+    //     padding: 0px 140px;
+    // }
+    // form.formTwo{
+    //     padding: 0px 140px;
+    // }
+    // form.formThree{
+    //     padding: 0px 140px;
+    // }
+    // form.formFour{
+    //     padding: 0px 140px;
+    // }
+    // form.formFive{
+    //     padding: 0px 140px;
+    // }
 }
 
 @media (max-width: 978px){
-    form.formOne{
-        padding: 0px 120px;
-    }
-    form.formTwo{
-        padding: 0px 120px;
-    }
-    form.formThree{
-        padding: 0px 120px;
-    }
-    form.formFour{
-        padding: 0px 120px;
-    }
-    form.formFive{
-        padding: 0px 120px;
-    }
+    
 }
 
 @media (max-width: 940px){
     .mainBigContainer{
         flex-wrap: wrap;
     }
-    .foodBoxContainer .junkBox {
-    width: 0px;
-    height: 0px;
-    margin: 35px 0px;
-    }
+    // .foodBoxContainer .junkBox {
+    // width: 0px;
+    // height: 0px;
+    // margin: 35px 0px;
+    // }
 }
 
 @media (max-width: 768px){

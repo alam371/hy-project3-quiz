@@ -91,24 +91,10 @@ form.formOne{
     margin: 20px 170px;
 }
 
-// .inputText label{
-//     font-family: $baseFont;
-//     color: #00cc00;
-//     font-size: 36px;
-// }
-
 input[type="radio"]{
     height: 20px;
     width: 25px; 
 }
-
-// .mainContainerOne.rightBox{
-//     background: #8b4727;
-//     width: 100%;  
-// }
-// .mainContainerOne.rightBox p{
-//     @mixin rightBox ()
-// }
 
 section.questionOne{
     .mainContainerOne.rightBox{
@@ -215,4 +201,5 @@ section.finalResult{
     color: $firstColor;
     text-align: center;
     display: flex;
+    padding: 0px 230px;
 }
