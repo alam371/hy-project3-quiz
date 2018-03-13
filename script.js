@@ -10,7 +10,7 @@ const myApp = {};
         } else if (tally > 15 && tally <= 20) {
             $('.word').text(`You're super hangry. You must of had a wild night! Eat everything in sight! Also, check if you just got a tattoo!!`);
         }
-        $('.finalResult').show();
+        // $('.finalResult').show();
     }
 
     myApp.restartSubmit = function (e){
@@ -26,7 +26,7 @@ const myApp = {};
         // Then shows startPage.
         $('.startPage').addClass('active');
         // Then hide .finalResult section.
-        $('.finalResult').hide();
+        // $('.finalResult').hide();
 
     }
 
@@ -48,11 +48,13 @@ const myApp = {};
             tally = tally + Number($(this).val());
         });
         if ($(this).attr('id') === 'finalResult'){
+            myApp.handleClick(e);
             myApp.text(tally);   
         }
     }
 
     myApp.setupEventHandlers = function(){
+        console.log("helloworld");
         // when .nextButton is clicked, it passes myApp.handleClick.
         $('.nextButton').click(myApp.handleClick);
         // when form is clicked, submit passes myApp.handleSubmit.
